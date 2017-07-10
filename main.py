@@ -1,6 +1,7 @@
 #/usr/bin/env/python
 
 from modules.galaxy.Galaxy import Galaxy
+from modules.solar_system.SolarSystem import SolarSystem
 
 print "==== ENVIRONMENT ===="
 
@@ -9,6 +10,9 @@ print "==== ENVIRONMENT ===="
 
 # print("%s - %s" % (world_name, world_size))
 
-galaxy = Galaxy();
+# create galaxy
+galaxy = Galaxy()
+galaxy.create_black_hole()
 
-
+# create solar system
+solar_system = SolarSystem(galaxy)
