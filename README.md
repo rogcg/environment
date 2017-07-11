@@ -1,2 +1,2 @@
 # environment
-__a stupid world simulator__
+__a stupid universe simulator__
