@@ -6,4 +6,4 @@
 galaxy_type = 'spiral'
 # Galaxy matrix size with same X and Y 
 galaxy_size_au = 80
-galaxy_size_kpc = 30
+galaxy_size_kpc = 40
