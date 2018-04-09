@@ -24,6 +24,15 @@ size = random.randint(start, end)
 
 galaxy = Galaxy(size)
 galaxy.create_black_hole()
+galaxy.create_galaxy_sectors()
+
+print "======================"
+print ("Your galaxy has the \nsize of %d KPC which is \nequivalent to %d AU, \nand also a black hole \nin its center." % (galaxy.size, galaxy.kpc_to_au(galaxy.size)))
+print "======================"
+
+print "======================"
+print ("Black Hole event horizon is \n %s \n and scape velocity is \n %s" % (galaxy.black_hole.event_horizon_value, galaxy.black_hole.escape_velocity_value)) 
+print "======================"
 
 # create solar system
 #solar_system = SolarSystem(galaxy)

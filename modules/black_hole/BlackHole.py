@@ -27,8 +27,8 @@ class BlackHole:
     singularity_value = 0
 
     def __init__(self):
-        event_horizon = EventHorizon()
-        self.event_horizon_value = event_horizon.calculate_event_horizon()
+        event_horizon = EventHorizon()    
+        self.event_horizon_value = event_horizon.calculate_event_horizon()    
         self.escape_velocity_value = self.calculate_escape_velocity(self.event_horizon_value)
         
     def calculate_escape_velocity(self, event_horizon):
@@ -51,7 +51,7 @@ class BlackHole:
         # multiply newton's gravitational constant with black hole mass defined in __globals__.py
         temp = 2 * g * __globals__.BLACK_HOLE_MASS
         # divide by the event horizon received as parameter, which is the same as the Schwarzschild Radius, since
-        # we are simulating a non-rotating black hole
+        # we are simulating a non-rotating black hole        
         return temp/event_horizon
 
 
